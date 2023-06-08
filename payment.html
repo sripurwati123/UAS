@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - Hotel XYZ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Payment</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li id="registrationPage"><a href="registration.html">Registration</a></li>
+          <li id="bookingPage"><a href="booking.html">Booking</a></li>
+          <li id="paymentPage"><a href="payment.html">Payment</a></li>
+          <li id="logout"><a href="index.html">logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Make a Payment</h2>
+      <form id="payment-form">
+        <label for="cardnumber">Card Number:</label>
+        <input type="text" id="cardnumber" name="cardnumber" required />
+        <label for="expiry">Expiry Date:</label>
+        <input type="text" id="expiry" name="expiry" required />
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required />
+        <label for="BookingId">Book ID:</label>
+        <input type="text" id="BookingId" name="BookingId" required />
+        <button type="submit">Pay Now</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2023 Hotel XYZ. All rights reserved.</p>
+    </footer>
+    <script src="payment.js"></script>
+  </body>
+</html>

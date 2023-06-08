@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Hotel XYZ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Booking</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li id="bookingPage"><a href="booking.html">Booking</a></li>
+          <li id="paymentPage"><a href="payment.html">Payment</a></li>
+          <li id="logout"><a href="index.html">logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Book a Room</h2>
+      <label for="roomType">Choose your room type :</label>
+      <select id="roomType">
+        <option value="Standard Room">Standard Room</option>
+        <option value="Deluxe Room">Deluxe Room</option>
+        <option value="Suite Room">Suite Room</option>
+      </select>
+
+      <form id="booking-form">
+        <label for="checkIn">Check-in Date:</label>
+        <input type="date" id="checkIn" name="checkIn" required />
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required />
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2023 Hotel XYZ. All rights reserved.</p>
+    </footer>
+    <script src="booking.js"></script>
+  </body>
+</html>

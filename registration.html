@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration - Hotel XYZ</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Registration</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li id="registrationPage"><a href="registration.html">Registration</a></li>
+          <li id="bookingPage"><a href="booking.html">Booking</a></li>
+          <li id="paymentPage"><a href="payment.html">Payment</a></li>
+          <li id="logout"><a href="index.html">logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Create an Account</h2>
+      <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2023 Hotel XYZ. All rights reserved.</p>
+    </footer>
+    <script src="registration.js"></script>
+  </body>
+</html>
